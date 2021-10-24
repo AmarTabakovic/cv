@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Amar Tabakovic
+% Template by: Sourabh Bajaj
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemA}[1]{
+  \item\small{
+   {#1 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubItemA}[1]{\resumeItemA{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Amar Tabakovic} & \href{mailto:tabakovicamar1@gmail.com}{tabakovicamar1@gmail.com}\\
+  Sevogelstrasse 19, 4052 Basel-CH &\href{tel:+41787848987}{+41 78 784 89 87} \\
+   7. März 2002& \href{https://amartabakovic.ch/}{amartabakovic.ch} \\
+   & \href{https://github.com/amartabakovic}{github.com/amartabakovic} \\
+   & \href{https://linkedin.com/in/amartabakovic}{linkedin.com/in/amartabakovic} 
+  
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Berufserfahrung}
+  \resumeSubHeadingListStart
+     
+      \resumeSubheading
+      {Schweizerische Bankiervereinigung}{Basel, Schweiz}
+      {Praktikant ICT}{August 2020 -- Juni 2021}
+      \resumeItemListStart  
+      \resumeItemA{Pflichtpraktikum für das 4. Jahr an der Informatikmittelschule.}
+      \resumeItemA{L1 und L2 Support für interne und externe Kunden.}
+      \resumeItemA{Mitarbeit an der Cloud-Migration der Schweizerischen Bankiervereinigung}
+      \resumeItemA{Verwaltung des WordPress-basierten Intranets.}
+      \resumeItemA{Unterstützung des ICT-Teams in diversen organisatorischen und technischen Angelegenheiten.}
+      \resumeItemA{Abschlussprojekt (IPA): Entwicklung einer modernen Version des \textit{QI-Toolkit}, eine betriebsinterne Laravel-basierte Webanwendung zum Nachschlagen von amerikanischen Doppelbesteuerungsabkommen.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+  
+  %-----------EDUCATION-----------------
+\section{Ausbildung}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Berner Fachhochschule}{Biel, Schweiz}
+      {Bachelor of Science in Informatik}{September 2021 -- heute}
+     \resumeSubheading
+      {Informatikmittelschule Basel}{Basel, Schweiz}
+      {Informatiker EFZ, Applikationsentwicklung}{August 2017 -- Juli 2021}
+       \resumeItemListStart  
+      \resumeItemA{Informatikkompetenzen: 4.6}
+      \resumeItemA{IPA: 5.0}
+      \resumeItemA{Gesamtnote: 4.8}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Informatikmittelschule Basel}{Basel, Schweiz}
+      {Berufsmatura, Typ Wirtschaft und Dienstleistungen}{August 2017 -- Juli 2021}
+      \resumeItemListStart  
+      \resumeItemA{Gesamtnote: 4.6}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+\section{Kenntnisse \& Fähigkeiten}
+  \resumeSubHeadingListStart
+   \resumeSubItem{Programmiersprachen}
+      {C\#, Java, PHP, JavaScript (Node.js), Python}
+    \resumeSubItem{Frameworks \& Libraries}
+      {.NET Core, Laravel, WordPress, Bootstrap}
+    \resumeSubItem{Web \& Media}
+      {HTML, CSS, Sass, Adobe XD, Adobe Photoshop}
+     \resumeSubItem{Weitere Kenntnisse}
+      {AWS, git, Bash, SQL, NoSQL, Office 365, \LaTeX}
+
+  \resumeSubHeadingListEnd
+  
+  \section{Sprachen}
+  \resumeSubHeadingListStart
+   \resumeSubItem{Deutsch}
+      {Muttersprache}
+    \resumeSubItem{Bosnisch}
+      {Muttersprache}
+    \resumeSubItem{Englisch}
+      {Fliessend}
+    \resumeSubItem{Französisch}
+      {Verhandlungssicher}
+
+  \resumeSubHeadingListEnd
+  
+  
+  \section{Freizeitliche Interessen}
+  \resumeSubHeadingListStart
+   \resumeSubItemA{Gitarre und Bassgitarre}
+    \resumeSubItemA{Sammeln von Schallplatten}
+    \resumeSubItemA{Joggen}
+    \resumeSubItemA{Lesen}
+
+  \resumeSubHeadingListEnd
+  
+  
+  \section{Referenzen}
+ \small{Auf Anfrage.}
+
+
+
+%-------------------------------------------
+\end{document}
